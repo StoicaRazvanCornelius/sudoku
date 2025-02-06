@@ -1,0 +1,20 @@
+^C:\USERS\RAZVANS\DESKTOP\WORKPLACE\SUDOKU\SUDOKU_GENERATOR\BUILD\CMAKEFILES\8CBE448B264CF90557BECD333D22867E\PREBUILD.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -rf C:/Users/RazvanS/Desktop/workplace/sudoku/sudoku_generator/build/*
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\RAZVANS\DESKTOP\WORKPLACE\SUDOKU\SUDOKU_GENERATOR\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/RazvanS/Desktop/workplace/sudoku/sudoku_generator -BC:/Users/RazvanS/Desktop/workplace/sudoku/sudoku_generator/build --check-stamp-file C:/Users/RazvanS/Desktop/workplace/sudoku/sudoku_generator/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\RAZVANS\DESKTOP\WORKPLACE\SUDOKU\SUDOKU_GENERATOR\BUILD\CMAKEFILES\8CBE448B264CF90557BECD333D22867E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/RazvanS/Desktop/workplace/sudoku/sudoku_generator -BC:/Users/RazvanS/Desktop/workplace/sudoku/sudoku_generator/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/RazvanS/Desktop/workplace/sudoku/sudoku_generator/build/Sudoku_generator.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
