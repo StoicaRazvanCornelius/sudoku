@@ -7,10 +7,6 @@ add_executable(sudoku_generator ${SUDOKU_GENERATOR_SOURCES})
 # Include headers
 target_include_directories(sudoku_generator PRIVATE include)
 
-# Add common library
-#add_subdirectory(../common common_build)
-#target_link_libraries(sudoku_generator PRIVATE common_lib)
-
 add_custom_target(prebuild
     COMMAND ${CMAKE_COMMAND} -E rm -rf ${CMAKE_BINARY_DIR}/*
     COMMENT "Cleaning old build files"
